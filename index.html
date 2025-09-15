@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .parent{
+            width: 80%;
+            margin: 70px auto;
+            border: thin solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .child{
+            background-color: blue;
+            margin-inline: 10px;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 2px 4px 10px black;
+
+        }
+        @media (max-width:1000px) {
+            .child{
+                background-color: yellow;
+                border-radius: 0;
+            }
+        }
+        @media(max-width:800px) {
+            .child{
+                background-color: green;
+                
+            }
+            .parent{
+                width: 90%;
+            }
+        }
+        @media(max-width:690px) {
+            .parent{
+                flex-direction: column;
+               
+            }
+            .child:nth-child(1){
+                 order: 3;
+                 margin-top: 20px;
+            }
+            .child:nth-child(3){
+                order: 1;
+                margin-top: 20px;
+            }
+            .child:nth-child(2){
+                order: 3;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+        <h1>1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui inventore officiis cupiditate possimus
+            repudiandae voluptatum nemo officia eveniet nobis fugiat laborum eum earum eaque odit quidem, soluta illo id
+            porro?</p>
+        </div>
+        <div class="child">
+            <h1>2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eos voluptas accusantium dolores
+                animi tempora commodi, vel accusamus quos explicabo vero nobis. Iste, asperiores minima temporibus neque
+                placeat saepe totam?</p>
+                </div>
+            <div class="child">
+                <h1>3</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti laudantium, provident
+                    delectus voluptate molestias corporis doloremque quisquam aperiam fuga harum. Odio rem illum fugit
+                    blanditiis ad sed ea distinctio.</p>
+            </div>
+
+
+    </div>
+</body>
+
+</html>

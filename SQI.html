@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: thin solid black;
+        }
+
+        body {
+            font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
+        }
+
+        .hallo,
+        .hell,
+        .car,
+        .box {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .earn {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 40px;
+            gap: 20px;
+        }
+
+        .earn img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-top: 30px;
+            margin-left: 0;
+        }
+
+        .earn h1 {
+            font-size: 40px;
+            font-family: Archivo, Helvetica, Arial, Lucida, sans-serif;
+        }
+
+        .ours h1 {
+            margin-top: 100px;
+            margin-left: 40px;
+            font-size: 60px;
+            text-align: start;
+        }
+
+        .ours p {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .box {
+            justify-content: center;
+        }
+
+        .A,
+        .B {
+            flex: 1 1 100%;
+            max-width: 550px;
+            height: auto;
+            border: thin solid black;
+            border-radius: 30px;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .A img,
+        .B img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .ss {
+            margin-left: 40px;
+        }
+
+        .vid {
+            margin-left: 0;
+        }
+
+        .begin {
+            border: thin solid black;
+            margin-top: 50px;
+            width: 100%;
+            height: auto;
+            padding: 40px 20px;
+            background: rgb(3, 5, 54);
+            text-align: center;
+        }
+
+        .begin h1,
+        .begin h6 {
+            color: white;
+        }
+
+        .one,
+        .two {
+            height: 40px;
+            border-radius: 20px;
+            width: 200px;
+            background-color: rgb(0, 32, 138);
+            color: white;
+            border-style: none;
+            margin: 10px;
+        }
+
+        .car>div {
+            flex: 1 1 100%;
+            border: thin solid black;
+            height: auto;
+            font-size: 18px;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .help {
+            width: 100%;
+            padding: 40px;
+            background: linear-gradient(to right, rgb(6, 0, 46), #bebdc9);
+            color: white;
+        }
+
+        .help h1 {
+            font-size: 36px;
+        }
+
+        @media (min-width: 768px) {
+
+            .A,
+            .B {
+                flex: 1 1 calc(50% - 80px);
+                width: 100%;
+            }
+
+            .car>div {
+                flex: 1 1 48%;
+                width: 100%;
+            }
+
+            .hallo,
+            .hell {
+                flex-wrap: nowrap;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .earn h1 {
+                font-size: 32px;
+                width: 100%;
+            }
+
+            .ours h1 {
+                font-size: 36px;
+                width: 100%;
+            }
+
+            .box {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .begin h1 {
+                font-size: 28px;
+            }
+
+            .help h1 {
+                font-size: 28px;
+            }
+        }
+
+        @media (max-width: 425px) {
+            .earn {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .earn img {
+                width: 100%;
+            }
+
+            .one,
+            .two {
+                width: 100%;
+            }
+
+            .box,
+            .hallo,
+            .hell,
+            .car {
+                flex-direction: column;
+                gap: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            .car>div {
+                font-size: 16px;
+            }
+
+            .help h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vid">
+        <video src="https://edu.sqi.ng/wp-content/uploads/2023/05/sqi-web-video-1.webm" controls loop
+            style="width: 100%; height: auto;"></video>
+        <!-- <h1>The <br>
+            National Innovation <br>
+            Diploma Program</h1> -->
+    </div>
+
+
+
+
+    <div class="earn">
+        <div>
+            <h1>Earn a Degree + Experience</h1>
+            <p>Earn your National Innovative Diploma (NID) in ICT and launch or</p>
+            <p>advance your career with the in-demand skills to succeed in</p>
+            <p>several high-growth industries. As a student in the program, you will</p>
+            <p>achieve proficiency and real-life practical experience in your</p>
+            <p>course of choice.</p>
+            <div style="border: thin solid rgb(7, 32, 120); width: 600px;"></div> <br>
+            <p>The National Innovation Diploma (NID) offered at SQI College of ICT</p>
+            <p>is an approved academic program of National Board for Technical</p>
+            <p>Education (NBTE) an important organ under the Nigerian Federal</p>
+            <p>Ministry of Education. The National Innovation Diploma programme</p>
+            <p>provides access to Technical and Vocational education in Nigeria.</p>
+        </div>
+        <img src="https://edu.sqi.ng/wp-content/uploads/2023/04/sqi-graduate.jpg alt="width="600px" height="500px">
+    </div>
+    <br> <br>
+    <div>
+        <button
+            style="background-color: rgb(0, 32, 138); width: 250px; height: 70px; border-radius: 30px; color: white; font-family: Poppins, Helvetica, Arial, Lucida, sans-serif; font-size: 20px; margin-left: 40px;">Admission
+            requirements</button>
+    </div>
+
+    </div>
+    <div class="ours">
+        <h1>Our Accredited Programs</h1>
+        <p>Our courses are broad and deep – giving you the skills to create future technology.</p>
+        <p>When students complete their academic studies, they are awarded the National Innovation Diploma which is
+            equivalent to and conforms with</p>
+        <p>the standard National Diploma certificates awarded in polytechnics and mono-technics in Nigeria.</p>
+        <div class="box">
+            <div class="A">
+                <img src="https://edu.sqi.ng/wp-content/uploads/2023/05/software-developer.jpg" alt="" width="400px">
+                <h4 style="font-size: 20px; margin-left: 40px;">DEPARTMENT OF COMPUTER AND <br>SOFTWARE ENGINEERING.
+                </h4>
+                <p>Web Application Development Option, Native Application</p>
+                <p>Development Option, Cyber Security Option, Data</p>
+                <p>Science/Analysis Option, Artificial Intelligence</p>
+            </div>
+            <div class="B">
+                <img src="https://edu.sqi.ng/wp-content/uploads/2023/05/hardware-engineer.jpg" alt="" width="400px">
+                <h4 style="font-size: 20px; margin-left: 40px;">DEPARTMENT OF COMPUTER AND <br> HARDWARE ENGINEERING
+                </h4>
+                <p>Robotics Engineering Option, Computer Hardware</p>
+                <p>Engineering Option, Network Security Systems Option,</p>
+                <p> Cloud/Server Administration Option, Internet of Things Option</p>
+            </div>
+        </div>
+
+    </div>
+    <br><br>
+
+    <div style="margin-left: 40px; ">
+        <h2>WHY STUDY AT SQI</h2>
+        <h1 class="ss">SQI Advantage</h1>
+    </div>
+
+    <div class="hallo">
+        <div>
+            <h4>Facilities and Lecturers</h4>
+            <p>World class facilities, seasoned lecturers and</p>
+            <p>certified instructors</p>
+        </div>
+        <div>
+            <h4>Acquire a tech skill</h4>
+            <p>Acquire a tech skill</p>
+            <p>certificate alongside your Diploma program</p>
+        </div>
+        <div>
+            <h4>Job Opportunity</h4>
+            <p>78.5% of our students found secure</p>
+            <p>employment within three months of</p>
+            <p>graduation. Students leave from learning to</p>
+            <p>getting job roles</p>
+        </div>
+    </div>
+    </div>
+    <div class="hell">
+        <div>
+            <h4>Conducive learning space</h4>
+            <p>Enjoy uninterrupted learning and practical</p>
+            <p>experience at our campuses.</p>
+        </div>
+        <div>
+            <h4>Learn the smarter and faster way</h4>
+            <p>Build real world projects that greatly</p>
+            <p>enhance your portfolio and gives you a</p>
+            <p>competitive edge.</p>
+        </div>
+        <div>
+            <h4>Purely practical</h4>
+            <p>This course is practical, Hands-on learning.</p>
+            <p>Practice and apply knowledge faster with</p>
+            <p>real-world projects you can show off.</p>
+        </div>
+    </div>
+    <div class="begin">
+        <h1>Begin your application process</h1>
+        <h6>
+            <p> <button class="one">Start Application</button>
+                <button class="two">Admission Requirements</button>
+            </p>
+        </h6>
+
+    </div>
+
+    <div>
+        <h3 style="font-size: 40px; text-align: center;">Frequently Asked Questions</h3>
+    </div>
+
+    <div class="car">
+        <div style="border: thin solid black; width: 500px; height: 70px;font-size: 20px;">What is NID?</div>
+        <div style="border: thin solid black; width: 500px; height: 70px; font-size: 20px;">What are the Accredited
+            Departments <br>for NID at SQI College of ICT?</div>
+    </div>
+    <div class="car">
+        <div style="border: thin solid black; width: 500px; height: 70px;font-size: 20px;">Is NID the same as OND?</div>
+        <div style="border: thin solid black; width: 500px; height: 70px;font-size: 20px;">What is the meaning of the
+            options <br>under each Department?</div>
+    </div>
+    <div class="car">
+        <div style="border: thin solid black; width: 500px; height: 70px;font-size: 20px;">How many years is the NID
+            program?</div>
+        <div style="border: thin solid black; width: 500px; height: 70px;font-size: 20px;">Can I take more than one
+            option?</div>
+    </div>
+    <div class="car">
+        <div style="border: thin solid black; width: 500px; height: 70px;font-size: 20px;">Do you have a part-time
+            program for <br>NID?</div>
+        <div style="border: thin solid black; width: 500px; height: 70px;font-size: 20px;">How much is the application
+            fee?</div>
+    </div>
+    <div class="car">
+        <div style="border: thin solid black; width: 500px; height: 70px;font-size: 20px; margin-left: 530px;">How much
+            is your tuition fee for the NID</div>
+    </div>
+    <div class="help">
+        <h1 style="font-size: 50px; color: white; text-align: start; margin-left: 80px;">Admission is Open</h1>
+        <p style="margin-left: 80px; color: white;font-size: ; ">Begin your journey to becoming a world class
+            professional by</p>
+        <P style="margin-left: 80px; color: white;font-size: ; ">applying now.</P>
+        <div>App]ly now</div>
+    </div>
+</body>
+
+</html>
